@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "heroesapp"
+version = "0.1.0"
+description = "The project describes an async setup for FastAPI, SQLAlchemy, SQLModel"
+authors = ["Etretyakov <etretyakov@kaf65.ru>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.78.0"
+sqlmodel = "^0.0.6"
+pytest = "^7.1.2"
+asyncpg = "^0.25.0"
+alembic = "^1.7.7"
+pytest-asyncio = "^0.18.3"
+httpx = "^0.22.0"
+python-dotenv = "^0.20.0"
+uvicorn = "^0.17.6"
+
+[tool.poetry.dev-dependencies]
+isort = "flake8"
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

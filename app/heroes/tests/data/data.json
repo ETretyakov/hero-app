@@ -1,0 +1,42 @@
+{
+  "initial_data": {
+    "hero": {
+      "uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "nickname": "TheLastManStands",
+      "role": "mage"
+    }
+  },
+  "case_create": {
+    "payload": {
+      "nickname": "TheLastManStands",
+      "role": "mage"
+    },
+    "want": {
+      "nickname": "TheLastManStands",
+      "role": "mage"
+    }
+  },
+  "case_get": {
+    "want": {
+      "uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "nickname": "TheLastManStands",
+      "role": "mage"
+    }
+  },
+  "case_patch": {
+    "payload": {
+      "nickname": "TheLastManStands!",
+      "role": "warrior"
+    },
+    "want": {
+      "nickname": "TheLastManStands!",
+      "role": "warrior"
+    }
+  },
+  "case_delete": {
+    "want": {
+      "status": true,
+      "message": "The hero has been deleted!"
+    }
+  }
+}
