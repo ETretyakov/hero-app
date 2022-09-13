@@ -18,4 +18,5 @@ Here is a short description of python packages used in the article (just to make
    with the SQLAlchemy Database Toolkit for Python.
 
 ## Deployment
-Use this command to build Docker container: `docker build -t hero-app -f Dockerfile .`
+Use this command to build Docker container: `docker build --build-arg ENV_FILE=".env" -t hero-app -f Dockerfile .`
+And this command to start container: `docker run -d -p "8080:80" --name hero-app hero-app`
